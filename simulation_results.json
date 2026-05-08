@@ -1,0 +1,666 @@
+{
+  "victims": [
+    {
+      "id": 0,
+      "pos": [
+        2,
+        5
+      ],
+      "severity": "critical",
+      "rescued": true,
+      "rescue_time": 9,
+      "risk_score": 0.0653,
+      "survival_prob": 0.9347,
+      "assigned_ambulance": 0
+    },
+    {
+      "id": 1,
+      "pos": [
+        5,
+        7
+      ],
+      "severity": "critical",
+      "rescued": true,
+      "rescue_time": 12,
+      "risk_score": 0.6675,
+      "survival_prob": 0.3325,
+      "assigned_ambulance": 0
+    },
+    {
+      "id": 2,
+      "pos": [
+        3,
+        3
+      ],
+      "severity": "moderate",
+      "rescued": true,
+      "rescue_time": 10,
+      "risk_score": 0.018,
+      "survival_prob": 0.982,
+      "assigned_ambulance": 0
+    },
+    {
+      "id": 3,
+      "pos": [
+        7,
+        2
+      ],
+      "severity": "moderate",
+      "rescued": true,
+      "rescue_time": 17,
+      "risk_score": 0.742,
+      "survival_prob": 0.258,
+      "assigned_ambulance": 0
+    },
+    {
+      "id": 4,
+      "pos": [
+        6,
+        8
+      ],
+      "severity": "minor",
+      "rescued": true,
+      "rescue_time": 22,
+      "risk_score": 0.5707,
+      "survival_prob": 0.4293,
+      "assigned_ambulance": 0
+    }
+  ],
+  "grid": [
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "initial_grid": [
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "search_results": {
+    "0": {
+      "BFS": {
+        "path_len": 8,
+        "cost": 10,
+        "risk": 1,
+        "expanded": 26,
+        "time_ms": 0.137
+      },
+      "DFS": {
+        "path_len": 8,
+        "cost": 8,
+        "risk": 0,
+        "expanded": 8,
+        "time_ms": 0.048
+      },
+      "Greedy": {
+        "path_len": 8,
+        "cost": 8,
+        "risk": 0,
+        "expanded": 8,
+        "time_ms": 0.061
+      },
+      "A*": {
+        "path_len": 8,
+        "cost": 8,
+        "risk": 0,
+        "expanded": 12,
+        "time_ms": 0.118
+      },
+      "A*-safe": {
+        "path_len": 8,
+        "cost": 8,
+        "risk": 0,
+        "expanded": 12,
+        "time_ms": 0.097
+      }
+    },
+    "1": {
+      "BFS": {
+        "path_len": 13,
+        "cost": 13,
+        "risk": 0,
+        "expanded": 63,
+        "time_ms": 0.281
+      },
+      "DFS": {
+        "path_len": 45,
+        "cost": 55,
+        "risk": 5,
+        "expanded": 49,
+        "time_ms": 0.263
+      },
+      "Greedy": {
+        "path_len": 13,
+        "cost": 15,
+        "risk": 1,
+        "expanded": 13,
+        "time_ms": 0.089
+      },
+      "A*": {
+        "path_len": 13,
+        "cost": 13,
+        "risk": 0,
+        "expanded": 28,
+        "time_ms": 0.296
+      },
+      "A*-safe": {
+        "path_len": 13,
+        "cost": 13,
+        "risk": 0,
+        "expanded": 28,
+        "time_ms": 0.247
+      }
+    },
+    "2": {
+      "BFS": {
+        "path_len": 7,
+        "cost": 7,
+        "risk": 0,
+        "expanded": 17,
+        "time_ms": 0.084
+      },
+      "DFS": {
+        "path_len": 29,
+        "cost": 33,
+        "risk": 2,
+        "expanded": 67,
+        "time_ms": 0.324
+      },
+      "Greedy": {
+        "path_len": 7,
+        "cost": 7,
+        "risk": 0,
+        "expanded": 8,
+        "time_ms": 0.051
+      },
+      "A*": {
+        "path_len": 7,
+        "cost": 7,
+        "risk": 0,
+        "expanded": 12,
+        "time_ms": 0.11
+      },
+      "A*-safe": {
+        "path_len": 7,
+        "cost": 7,
+        "risk": 0,
+        "expanded": 12,
+        "time_ms": 0.099
+      }
+    },
+    "3": {
+      "BFS": {
+        "path_len": 10,
+        "cost": 12,
+        "risk": 1,
+        "expanded": 34,
+        "time_ms": 0.149
+      },
+      "DFS": {
+        "path_len": 54,
+        "cost": 64,
+        "risk": 5,
+        "expanded": 62,
+        "time_ms": 0.283
+      },
+      "Greedy": {
+        "path_len": 12,
+        "cost": 14,
+        "risk": 1,
+        "expanded": 12,
+        "time_ms": 0.079
+      },
+      "A*": {
+        "path_len": 12,
+        "cost": 12,
+        "risk": 0,
+        "expanded": 23,
+        "time_ms": 0.428
+      },
+      "A*-safe": {
+        "path_len": 12,
+        "cost": 12,
+        "risk": 0,
+        "expanded": 20,
+        "time_ms": 0.22
+      }
+    },
+    "4": {
+      "BFS": {
+        "path_len": 15,
+        "cost": 17,
+        "risk": 1,
+        "expanded": 77,
+        "time_ms": 0.335
+      },
+      "DFS": {
+        "path_len": 39,
+        "cost": 47,
+        "risk": 4,
+        "expanded": 42,
+        "time_ms": 0.201
+      },
+      "Greedy": {
+        "path_len": 15,
+        "cost": 15,
+        "risk": 0,
+        "expanded": 15,
+        "time_ms": 0.104
+      },
+      "A*": {
+        "path_len": 15,
+        "cost": 15,
+        "risk": 0,
+        "expanded": 34,
+        "time_ms": 0.364
+      },
+      "A*-safe": {
+        "path_len": 15,
+        "cost": 15,
+        "risk": 0,
+        "expanded": 34,
+        "time_ms": 0.311
+      }
+    }
+  },
+  "ml_results": {
+    "kNN (k=5)": {
+      "accuracy": 0.9125,
+      "precision": 0.8,
+      "recall": 0.75,
+      "f1": 0.7742,
+      "cm": [
+        [
+          61,
+          3
+        ],
+        [
+          4,
+          12
+        ]
+      ]
+    },
+    "Naive Bayes": {
+      "accuracy": 0.9375,
+      "precision": 0.9231,
+      "recall": 0.75,
+      "f1": 0.8276,
+      "cm": [
+        [
+          63,
+          1
+        ],
+        [
+          4,
+          12
+        ]
+      ]
+    },
+    "MLP (32-16)": {
+      "accuracy": 0.925,
+      "precision": 0.75,
+      "recall": 0.9375,
+      "f1": 0.8333,
+      "cm": [
+        [
+          59,
+          5
+        ],
+        [
+          1,
+          15
+        ]
+      ]
+    }
+  },
+  "csp": {
+    "assignment": {},
+    "bt_heuristic": 4,
+    "bt_no_heuristic": 4,
+    "success": false,
+    "ambulance_loads": {
+      "0": [],
+      "1": []
+    }
+  },
+  "local_search": {
+    "SA": {
+      "order": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "cost": 24
+    },
+    "HC": {
+      "order": [
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      "cost": 27
+    },
+    "winner": "SA"
+  },
+  "fuzzy": {
+    "0": 0.85,
+    "1": 0.85,
+    "2": 0.55,
+    "3": 0.55,
+    "4": 0.2
+  },
+  "priority_order": [
+    1,
+    0,
+    2,
+    3,
+    4
+  ],
+  "kpis": {
+    "victims_saved": 5,
+    "avg_rescue_time": 14.0,
+    "path_optimality_ratio": 0.9365,
+    "resource_utilization": 1.0,
+    "risk_exposure_score": 0,
+    "csp_bt_heuristic": 4,
+    "csp_bt_no_heuristic": 4,
+    "ml_best_f1": 0.8333
+  },
+  "log": [
+    "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "AIDRA Simulation Start",
+    "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550",
+    "\n[PHASE 0] Initialisation",
+    "ML pipeline: training and evaluating models\u2026",
+    "Dataset generated: 400 records, pos=81 (20%), neg=319 (80%)",
+    "ML [kNN (k=5)] \u2192 Acc=0.9125, Prec=0.8, Rec=0.75, F1=0.7742",
+    "ML [Naive Bayes] \u2192 Acc=0.9375, Prec=0.9231, Rec=0.75, F1=0.8276",
+    "ML [MLP (32-16)] \u2192 Acc=0.925, Prec=0.75, Rec=0.9375, F1=0.8333",
+    "Best ML model selected: MLP (32-16) (F1=0.8333)",
+    "Active ML model: MLP (32-16)",
+    "CSP: starting resource allocation",
+    "CSP plain backtracking: no valid assignment found",
+    "CSP (MRV + FC)        \u2192 assignment={}, backtracks=4",
+    "CSP (plain BT)        \u2192 assignment={}, backtracks=4",
+    "  Ambulance 0 \u2192 victims [] (load 0/2)",
+    "  Ambulance 1 \u2192 victims [] (load 0/2)",
+    "Fuzzy priority | V0 (critical) risk_exp=0.00 \u2192 score=0.85",
+    "Fuzzy priority | V1 (critical) risk_exp=0.00 \u2192 score=0.85",
+    "Fuzzy priority | V2 (moderate) risk_exp=0.00 \u2192 score=0.55",
+    "Fuzzy priority | V3 (moderate) risk_exp=0.00 \u2192 score=0.55",
+    "Fuzzy priority | V4 (minor) risk_exp=0.00 \u2192 score=0.2",
+    "ML escalation | V1 survival_prob=0.333 < 0.5 \u2192 moved to front",
+    "Final priority order: [1, 0, 2, 3, 4]",
+    "SA start | initial_order=[3, 1, 2, 4, 0] | cost=39",
+    "SA final | best_order=[0, 2, 3, 1, 4] | best_cost=24",
+    "HC start | initial_order=[1, 4, 3, 2, 0] | cost=31",
+    "HC final | best_order=[0, 4, 1, 2, 3] | best_cost=27",
+    "Local search comparison | SA cost=24 | HC cost=27 | winner=SA",
+    "\n[PHASE 1] Rescue Execution",
+    "\n\u2500\u2500 Step 0: attempting rescue of V1 (critical) at (5, 7)",
+    "  Route: A*-safe | Safe path chosen (cost=13) \u2264 fast path (cost=13); Objective 1 resolved: lower risk, no extra time",
+    "  \u2713 V1 rescued | path_len=12 | risk_cells=0 | wait=0 | survival_prob=0.3325 (high risk) | rescue_time=12",
+    "\n\u2500\u2500 Step 1: attempting rescue of V0 (critical) at (2, 5)",
+    "  Route: A*-safe | Safe path chosen (cost=8) \u2264 fast path (cost=8); Objective 1 resolved: lower risk, no extra time",
+    "  \u2713 V0 rescued | path_len=7 | risk_cells=0 | wait=2 | survival_prob=0.9347 (low risk) | rescue_time=9",
+    "\n\u2500\u2500 Step 2: attempting rescue of V2 (moderate) at (3, 3)",
+    "  Route: A*-safe | Safe path chosen (cost=7) \u2264 fast path (cost=7); Objective 1 resolved: lower risk, no extra time",
+    "  \u2713 V2 rescued | path_len=6 | risk_cells=0 | wait=4 | survival_prob=0.982 (low risk) | rescue_time=10",
+    "\n\u2500\u2500 Step 3: attempting rescue of V3 (moderate) at (7, 2)",
+    "  \u26a0 EVENT: Road at (4,3) blocked by aftershock",
+    "  Replanning triggered (event #1)",
+    "  Route replanned for V3",
+    "  Route: A*-safe | Safe path chosen (cost=12) \u2264 fast path (cost=12); Objective 1 resolved: lower risk, no extra time",
+    "  \u2713 V3 rescued | path_len=11 | risk_cells=0 | wait=6 | survival_prob=0.258 (high risk) | rescue_time=17",
+    "\n\u2500\u2500 Step 4: attempting rescue of V4 (minor) at (6, 8)",
+    "  Route: A*-safe | Safe path chosen (cost=15) \u2264 fast path (cost=15); Objective 1 resolved: lower risk, no extra time",
+    "  \u2713 V4 rescued | path_len=14 | risk_cells=0 | wait=8 | survival_prob=0.4293 (moderate risk) | rescue_time=22",
+    "\n[PHASE 2] KPI Computation",
+    "\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550\n\u2550",
+    "Victims saved     : 5/5",
+    "Avg rescue time   : 14.0 steps",
+    "Replanning events : 1",
+    "Path optimality   : 0.9365",
+    "Best ML F1        : 0.8333",
+    "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550"
+  ],
+  "replanning_count": 1
+}

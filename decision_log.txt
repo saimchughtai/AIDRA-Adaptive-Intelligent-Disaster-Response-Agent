@@ -1,0 +1,97 @@
+AIDRA Decision Log
+======================================================================
+
+════════════════════════════════════════════════════════════
+AIDRA Simulation Start
+════════════════════════════════════════════════════════════
+
+[PHASE 0] Initialisation
+ML pipeline: training and evaluating models…
+Dataset generated: 400 records, pos=81 (20%), neg=319 (80%)
+ML [kNN (k=5)] → Acc=0.9125, Prec=0.8, Rec=0.75, F1=0.7742
+ML [Naive Bayes] → Acc=0.9375, Prec=0.9231, Rec=0.75, F1=0.8276
+ML [MLP (32-16)] → Acc=0.925, Prec=0.75, Rec=0.9375, F1=0.8333
+Best ML model selected: MLP (32-16) (F1=0.8333)
+Active ML model: MLP (32-16)
+CSP: starting resource allocation
+CSP plain backtracking: no valid assignment found
+CSP (MRV + FC)        → assignment={}, backtracks=4
+CSP (plain BT)        → assignment={}, backtracks=4
+  Ambulance 0 → victims [] (load 0/2)
+  Ambulance 1 → victims [] (load 0/2)
+Fuzzy priority | V0 (critical) risk_exp=0.00 → score=0.85
+Fuzzy priority | V1 (critical) risk_exp=0.00 → score=0.85
+Fuzzy priority | V2 (moderate) risk_exp=0.00 → score=0.55
+Fuzzy priority | V3 (moderate) risk_exp=0.00 → score=0.55
+Fuzzy priority | V4 (minor) risk_exp=0.00 → score=0.2
+ML escalation | V1 survival_prob=0.333 < 0.5 → moved to front
+Final priority order: [1, 0, 2, 3, 4]
+SA start | initial_order=[3, 1, 2, 4, 0] | cost=39
+SA final | best_order=[0, 2, 3, 1, 4] | best_cost=24
+HC start | initial_order=[1, 4, 3, 2, 0] | cost=31
+HC final | best_order=[0, 4, 1, 2, 3] | best_cost=27
+Local search comparison | SA cost=24 | HC cost=27 | winner=SA
+
+[PHASE 1] Rescue Execution
+
+── Step 0: attempting rescue of V1 (critical) at (5, 7)
+  Route: A*-safe | Safe path chosen (cost=13) ≤ fast path (cost=13); Objective 1 resolved: lower risk, no extra time
+  ✓ V1 rescued | path_len=12 | risk_cells=0 | wait=0 | survival_prob=0.3325 (high risk) | rescue_time=12
+
+── Step 1: attempting rescue of V0 (critical) at (2, 5)
+  Route: A*-safe | Safe path chosen (cost=8) ≤ fast path (cost=8); Objective 1 resolved: lower risk, no extra time
+  ✓ V0 rescued | path_len=7 | risk_cells=0 | wait=2 | survival_prob=0.9347 (low risk) | rescue_time=9
+
+── Step 2: attempting rescue of V2 (moderate) at (3, 3)
+  Route: A*-safe | Safe path chosen (cost=7) ≤ fast path (cost=7); Objective 1 resolved: lower risk, no extra time
+  ✓ V2 rescued | path_len=6 | risk_cells=0 | wait=4 | survival_prob=0.982 (low risk) | rescue_time=10
+
+── Step 3: attempting rescue of V3 (moderate) at (7, 2)
+  ⚠ EVENT: Road at (4,3) blocked by aftershock
+  Replanning triggered (event #1)
+  Route replanned for V3
+  Route: A*-safe | Safe path chosen (cost=12) ≤ fast path (cost=12); Objective 1 resolved: lower risk, no extra time
+  ✓ V3 rescued | path_len=11 | risk_cells=0 | wait=6 | survival_prob=0.258 (high risk) | rescue_time=17
+
+── Step 4: attempting rescue of V4 (minor) at (6, 8)
+  Route: A*-safe | Safe path chosen (cost=15) ≤ fast path (cost=15); Objective 1 resolved: lower risk, no extra time
+  ✓ V4 rescued | path_len=14 | risk_cells=0 | wait=8 | survival_prob=0.4293 (moderate risk) | rescue_time=22
+
+[PHASE 2] KPI Computation
+
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+═
+Victims saved     : 5/5
+Avg rescue time   : 14.0 steps
+Replanning events : 1
+Path optimality   : 0.9365
+Best ML F1        : 0.8333
+════════════════════════════════════════════════════════════
