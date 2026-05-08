@@ -1,17 +1,11 @@
 # 🚨 AIDRA — Adaptive Intelligent Disaster Response Agent
 
-<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8-orange?style=for-the-badge&logo=scikit-learn)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
-![Course](https://img.shields.io/badge/AIC--201-CCP%20Project-red?style=for-the-badge)
 
 **A hybrid AI system for real-time disaster victim evacuation planning**  
 *Bahria University, Islamabad Campus — AIC-201 Artificial Intelligence*
 
-[📄 Report](#-report) · [🎬 Demo Video](#-demo-video) · [🚀 Quick Start](#-quick-start) · [📁 Project Structure](#-project-structure) · [📊 Results](#-results)
+
 
 </div>
 
