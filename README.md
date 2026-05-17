@@ -29,7 +29,7 @@ The agent operates on a **10×10 grid** with blocked roads, high-risk fire zones
 
 ## 🎬 Demo Video
 
-> 📹 **[Watch the 2-minute demonstration on LinkedIn →](https://www.linkedin.com/posts/[your-profile]/aidra-demo)**
+> 📹 **[Watch the 2-minute demonstration on LinkedIn →](https://www.linkedin.com/posts/m-saim-chughtai-204043287_aidra-adaptive-intelligent-disaster-response-ugcPost-7459314326328442880-USDa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWYSWQBqX1aaLzTNfrpfadEIS_-j9aMTE8)**
 
 ---
 
